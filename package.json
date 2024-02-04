@@ -1,0 +1,24 @@
+{
+  "name": "todolist",
+  "version": "1.6.4",
+  "description": "study todolist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -a localhost -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daily1313/TodoList.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daily1313/TodoList/issues"
+  },
+  "homepage": "https://github.com/daily1313/TodoList#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^5.3.2"
+  }
+}
