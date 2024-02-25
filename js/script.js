@@ -28,4 +28,16 @@ app.controller('TodoCtrl', function ($scope) {
             createdAt: Date.now()
         }
     ];
+
+    $scope.remove = function(todo) {
+        // find todo index in todos
+        var idx = $scope.todos.findIndex(function (item) {
+            return item.title === todo.title;
+        })
+
+        // remove from todos
+        if(idx > -1) {
+            $scope.todos.splice(idx, 1);
+        }
+    }
 });
