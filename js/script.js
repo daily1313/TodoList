@@ -56,3 +56,9 @@ app.controller('TodoCtrl', function ($scope) {
         $scope.newTodoTitle = "";
     }
 });
+
+app.directive('todoTitle', function() {
+    return {
+        template: '<h1>TodoList</h1>'
+    }
+}) 
