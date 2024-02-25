@@ -19,3 +19,12 @@ angular.module('todo').directive('todoItem', function() {
             '<date>{{todo.createdAt | date: "yyyy-MM-dd HH:mm:ss" }}</date>'
     }
 })
+
+angular.module('todo').directive('todoFilters', function() {
+    return {
+        template:
+        '<button class="btn btn-primary" ng-click="statusFilter={completed:true}">Completed</button>' +
+        '<button class="btn btn-primary" ng-click="statusFilter={completed:false}">Active</button>' +
+        '<button class="btn btn-primary" ng-click="statusFilter={}">All</button>'
+    }
+})

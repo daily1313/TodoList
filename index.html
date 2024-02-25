@@ -5,6 +5,7 @@
     <script src="node_modules/angular/angular.min.js"></script>
     <link href="css/Styles.css" rel="stylesheet" />
     <script src="js/script.js"></script>
+    <script src="js/directive.js"></script>
   </head>
   <body ng-app="todo" ng-controller="TodoCtrl">
 
@@ -31,9 +32,8 @@
         </li>
       </ul>
 
-      <button class="btn btn-primary" ng-click="statusFilter={completed:true}">Completed</button>
-      <button class="btn btn-primary" ng-click="statusFilter={completed:false}">Active</button>
-      <button class="btn btn-primary" ng-click="statusFilter={}">All</button>
+      <todo-filters></todo-filters>
+      
     </div>
     
   </body>
