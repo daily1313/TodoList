@@ -9,7 +9,7 @@ angular.module('todo').directive('todoItem', function() {
         template: 
             '<div class="input-group">' +
                 '<span class="input-group-addon">' +
-                    '<input type="checkbox" ng-model="todo.completed">' +
+                    '<input type="checkbox" ng-model="todo.completed" ng-click="update()">' +
                 '</span>' +
                 '<input type="text" class="form-control" ng-model="todo.title">' +
                 '<span class="input-group-btn">' +
