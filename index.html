@@ -12,9 +12,9 @@
 
       <h1>TodoList</h1>
 
-      <form name="todoForm" ng-submit="add()">
+      <form name="todoForm" ng-submit="add(newTodoTitle)">
         <div class="input-group">
-          <input type="text" class="form-control" ng-model="newTodoTitle">
+          <input type="text" class="form-control" ng-model="newTodoTitle" placeholder="input new todo" autofocus>
           <span class="input-group-btn">
           <button class="btn btn-success" type="submit">추가</button>
           </span>
